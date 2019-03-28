@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function kiemTraNamNhuan() {
+            let enteredYearValue = parseInt(prompt("Enter your year"));
+            let result = ((enteredYearValue%4) != 0)?
+                            "khong phai nam nhuan":
+                                (enteredYearValue%100 != 0)?
+                                    "la nam nhuan":
+                                        (enteredYearValue%400 != 0)?
+                                            "khong phai nam nhuan":
+                                                "la nam nhuan";
+            console.log(result);
+        }
+    </script>
+</head>
+<body>
+    <h1> Kiem tra nam nhuan</h1>
+        <button type="button" value="Kiem tra nam nhuan" onclick="kiemTraNamNhuan()">Kiem tra nam nhuan</button>
+</body>
+</html>
